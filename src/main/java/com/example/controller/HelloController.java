@@ -21,7 +21,12 @@ public class HelloController {
     @Autowired
     private NewService nService;
 
-
+    /**
+     * 写了个注释
+     * @param model
+     * @param session
+     * @return
+     */
     @GetMapping("/hello")
     public String hello(Model model, HttpSession session){
         System.out.println("hello..");
